@@ -1,11 +1,21 @@
 <!doctype html>
 <html>
 	<head>
+		<!--Meta tags-->
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--CSS-->
+		<link rel="stylesheet" href="/assets/css/normalize.css">
+		<link rel="stylesheet" href="/assets/css/barebones.css">
+
+		<!--Name of page-->
 		<title>{{ page.title }}</title>
 	</head>
 	<body>
 		{% include navigation.html %}
-		{{ content }}
+		<div class="container">
+			{{ content }}
+		</div>
 	</body>
 </html>
